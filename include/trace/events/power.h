@@ -213,6 +213,26 @@ TRACE_EVENT(cpu_frequency_limits,
 );
 
 TRACE_EVENT(device_pm_callback_start,
+
+	TP_STRUCT__entry(
+		__field(	u32,		min_freq	)
+		__field(	u32,		max_freq	)
+		__field(	u32,		cpu_id		)
+	),
+
+	TP_fast_assign(
+		__entry->min_freq = min_freq;
+		__entry->max_freq = max_freq;
+		__entry->cpu_id = cpu_id;
+	),
+
+	TP_printk("min=%lu max=%lu cpu_id=%lu",
+		  (unsigned long)__entry->min_freq,
+		  (unsigned long)__entry->max_freq,
+		  (unsigned long)__entry->cpu_id)
+);
+
+TRACE_EVENT(device_pm_callback_start,
 	TP_PROTO(struct device *dev, const char *pm_ops, int event),
 
 	TP_ARGS(dev, pm_ops, event),
