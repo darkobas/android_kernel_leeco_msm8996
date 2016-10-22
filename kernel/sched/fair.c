@@ -4908,9 +4908,11 @@ static inline int
 normalize_energy(int energy_diff)
 {
 	u32 normalized_nrg;
-	int max_delta;
+
 
 #ifdef CONFIG_SCHED_DEBUG
+	int max_delta;
+
 	/* Check for boundaries */
 	max_delta  = schedtune_target_nrg.max_power;
 	max_delta -= schedtune_target_nrg.min_power;
