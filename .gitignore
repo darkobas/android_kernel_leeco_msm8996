@@ -96,3 +96,5 @@ x509.genkey
 
 # Kconfig presets
 all.config
+
+# NEBULA: Michael Harrell <eliminater74@gmail.com> (The Nebula Project: Project EAS: Started 01/23/2017)

@@ -13,3 +13,5 @@ compile a new kernel with Android features enabled.
 
 Because there is no tool to consistently generate these config fragments,
 lets keep them alphabetically sorted instead of random.
+
+NEBULA: Michael Harrell <eliminater74@gmail.com> (The Nebula Project: Project EAS: Started 01/23/2017)
