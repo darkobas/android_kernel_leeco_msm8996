@@ -343,6 +343,20 @@ static struct ctl_table kern_table[] = {
 	},
 #endif
 	{
+		.procname	= "affinity_switch",
+		.data		= &sysctl_affinity_switch,
+		.maxlen		= sizeof(unsigned int),
+		.mode		= 0644,
+		.proc_handler	= affinity_switch_handler,
+	},
+	{
+		.procname	= "affinity_core",
+		.data		= &sysctl_affinity_core,
+		.maxlen		= sizeof(unsigned int),
+		.mode		= 0644,
+		.proc_handler	= affinity_core_handler,
+	},
+	{
 		.procname	= "sched_initial_task_util",
 		.data		= &sysctl_sched_initial_task_util,
 		.maxlen		= sizeof(unsigned int),
