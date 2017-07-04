@@ -42,8 +42,8 @@ extern unsigned int sysctl_sched_child_runs_first;
 extern unsigned int sysctl_sched_sync_hint_enable;
 extern unsigned int sysctl_sched_initial_task_util;
 extern unsigned int sysctl_sched_cstate_aware;
-extern int sysctl_affinity_switch;
-extern int sysctl_affinity_core;
+//extern int sysctl_affinity_switch;
+//extern int sysctl_affinity_core;
 #ifdef CONFIG_SCHED_WALT
 extern unsigned int sysctl_sched_use_walt_cpu_util;
 extern unsigned int sysctl_sched_use_walt_task_util;

@@ -344,14 +344,14 @@ static struct ctl_table kern_table[] = {
 #endif
 	{
 		.procname	= "affinity_switch",
-		.data		= &sysctl_affinity_switch,
+		.data		= NULL,
 		.maxlen		= sizeof(unsigned int),
 		.mode		= 0644,
 		.proc_handler	= affinity_switch_handler,
 	},
 	{
 		.procname	= "affinity_core",
-		.data		= &sysctl_affinity_core,
+		.data		= NULL,
 		.maxlen		= sizeof(unsigned int),
 		.mode		= 0644,
 		.proc_handler	= affinity_core_handler,
